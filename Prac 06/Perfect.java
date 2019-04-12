@@ -5,7 +5,7 @@ public class Perfect {
         System.out.println("Perfect numbers from 1 through 1000:");
         for(int num = 1; Math.pow(2, num-1) * ( Math.pow(2, num) - 1 ) < MAX; ++num){
             perfect = Math.pow(2, num-1) * ( Math.pow(2, num) - 1 );
-            System.out.println(perfect);
+            System.out.println(Math.round(perfect));
         }
         System.out.println("End.");
     }
